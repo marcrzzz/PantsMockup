@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d7adabd3595001635476a015b18b413b0aa3991a
 # [Start Bootstrap - Small Business](https://startbootstrap.com/template-overviews/small-business/)
 
 [Small Business](http://startbootstrap.com/template-overviews/small-business/) is a responsive marketing landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
@@ -61,6 +64,9 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-small-business/blob/gh-pages/LICENSE) license.
+<<<<<<< HEAD
 =======
 The design template for the Pantsbuild.org website redesign
 >>>>>>> 6f6165c12793ff568b7b5071f280faaa8b7649df
+=======
+>>>>>>> d7adabd3595001635476a015b18b413b0aa3991a
