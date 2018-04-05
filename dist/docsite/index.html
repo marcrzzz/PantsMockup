@@ -8,19 +8,18 @@
 
 <head>
   <meta charset="utf-8"/>
-  <title>Pants: A fast, scalable build system</title>
+  <title>Pants: a fast, scalable build system</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="pants-logo.ico">
   <!-- In case this is a "test publish", tell search engines where real version lives: -->
   <link rel="canonical" href="http://pantsbuild.org/index.html">
-
   <link rel="stylesheet" href="bootstrap-custom.min.css">
   <link rel="stylesheet" href="bootstrap-custom-theme.min.css">
   <link rel="stylesheet" href="docsite.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
 
 <body>
-
 <div class="header">
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
@@ -34,15 +33,14 @@
         <a class="navbar-brand navbar-brand-img" href="index.html">
           <img src="pants-logo.ico" alt="[pantsbuild logo]">
         </a>
-        <a class="navbar-brand" href="index.html">
-          Pants
-        </a>
+        <a class="navbar-brand" href="index.html"><strong>Pants</strong></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/">Docs</a></li>
           <li><a href="community.html">Community</a></li>
           <li><a href="https://www.github.com/pantsbuild/pants">GitHub</a></li>
+          <li><a href="https://stackoverflow.com/questions/tagged/pants" class="nav-icon"><i class="fa fa-stack-overflow"></i>Stack overflow</a></li>
           <li>
             <form class="navbar-form navbar-left search" role="search" action="https://www.google.com/search">
               <div class="form-group">
@@ -58,170 +56,84 @@
 </div>
 
 <div class="page">
-
   <div class="container-fluid">
     <div class="row">
-
-      <div class="col-md-1">
-      </div>
-
-      <div class="col-md-2">
+      <div class="col-md-1"></div>
+       <div class="col-md-2">
         <div class="site-toc">
-          <ul>
-                <li class="toc-h1 toc-heading">
-                  Getting Started
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="install.html">Installing Pants</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="setup_repo.html">Setting Up Pants</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="first_tutorial.html">Tutorial</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="common_tasks.html">Common Tasks</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Pants Basics
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="why_use_pants.html">Why Use Pants?</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="first_concepts.html">Pants Concepts</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="build_files.html">BUILD files</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="target_addresses.html">Target Addresses</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="3rdparty.html">Third-Party Dependencies</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="options.html">Pants Options</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="invoking.html">Invoking Pants</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="reporting_server.html">Reporting Server</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="ide_support.html">IDE Support</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  JVM
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="jvm_projects.html">JVM Projects with Pants</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="3rdparty_jvm.html">JVM Dependency Management</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="scala.html">Scala Support</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="publish.html">Publishing Artifacts</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="from_maven.html">Pants for Maven Experts</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Python
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="python_readme.html">Python Projects with Pants</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="3rdparty_py.html">Python 3rdparty Pattern</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Go
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="go_readme.html">Go support for Pants</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Codegen
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="thrift_deps.html">Thrift</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Docgen
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="page.html">Markdown</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Getting Help
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="tshoot.html">Troubleshooting</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="community.html">Community</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Reference
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="build_dictionary.html">Pants BUILD Dictionary</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="options_reference.html">Pants Reference</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Release Notes
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-1.5.x.html">1.5.x Stable Releases</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-1.4.x.html">1.4.x Stable Releases</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-1.3.x.html">1.3.x Stable Releases</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-1.2.x.html">1.2.x Stable Releases</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-1.1.x.html">1.1.x Stable Releases</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-1.0.x.html">1.0.x Stable Releases</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="notes-master.html">Master Pre-Releases</a>
-                </li>
-                <li class="toc-h1 toc-heading">
-                  Developer
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="dev.html">Pants Developer Center</a>
-                </li>
-                <li class="toc-h1 toc-link ">
-                  <a href="export.html">Export Format</a>
-                </li>
-          </ul>
+          <li class="toc-h1 toc-heading">
+            <a class="sidebar-nav-heading" data-toggle="collapse"
+                href="#concepts-menu" aria-expanded="false"
+                aria-controls="concepts-menu">
+                Pants Concepts<span class="caret"></span></a>
+            <ul class="collapse sidebar-nav sidebar-submenu" id="concepts-menu">
+              <li class="toc-h1 toc-link"><a href="why_use_pants.html">Why Use Pants?</a></li>
+              <li class="toc-h1 toc-link "><a href="first_concepts.html">Pants Concepts</a></li>
+              <li class="toc-h1 toc-link "><a href="build_files.html">BUILD files</a></li>
+              <li class="toc-h1 toc-link "><a href="target_addresses.html">Target Addresses</a></li>
+              <li class="toc-h1 toc-link "><a href="3rdparty.html">Third-Party Dependencies</a></li>
+              <li class="toc-h1 toc-link "><a href="options.html">Pants Options</a></li>
+              <li class="toc-h1 toc-link "><a href="invoking.html">Invoking Pants</a></li>
+              <li class="toc-h1 toc-link "><a href="reporting_server.html">Reporting Server</a></li>
+              <li class="toc-h1 toc-link "><a href="ide_support.html">IDE Support</a></li>
+            </ul>
+          </li>
+          <li class="toc-h1 toc-heading"><a class="sidebar-nav-heading" data-toggle="collapse"
+              href="#releases-menu" aria-expanded="false"
+              aria-controls="releases-menu">
+              Release Notes <span class="caret"></span></a>
+            <ul class="collapse sidebar-nav sidebar-submenu" id="releases-menu">
+              <li class="toc-h1 toc-link "><a href="notes-1.5.x.html">1.5.x Stable Releases</a</li>
+              <li class="toc-h1 toc-link "><a href="notes-1.4.x.html">1.4.x Stable Releases</a></li>
+              <li class="toc-h1 toc-link "><a href="notes-1.3.x.html">1.3.x Stable Releases</a></li>
+              <li class="toc-h1 toc-link "><a href="notes-1.2.x.html">1.2.x Stable Releases</a></li>
+              <li class="toc-h1 toc-link "><a href="notes-1.1.x.html">1.1.x Stable Releases</a></li>
+              <li class="toc-h1 toc-link "><a href="notes-1.0.x.html">1.0.x Stable Releases</a></li>
+              <li class="toc-h1 toc-link "><a href="notes-master.html">Master Pre-Releases</a></li>
+            </ul>
+          </li>
+          <h4>Languages: </h4>
+            <li class="toc-h1 toc-heading"><a class="sidebar-nav-heading" data-toggle="collapse"
+                href="#jvm-menu" aria-expanded="false"
+                aria-controls="jvm-menu">
+                JVM <span class="caret"></span></a>
+              <ul class="collapse sidebar-nav sidebar-submenu" id="jvm-menu">
+                <li class="toc-h1 toc-link "><a href="jvm_projects.html">JVM Projects with Pants</a></li>
+                <li class="toc-h1 toc-link "><a href="3rdparty_jvm.html">JVM Dependency Management</a></li>
+                <li class="toc-h1 toc-link "><a href="scala.html">Scala Support</a></li>
+                <li class="toc-h1 toc-link "><a href="publish.html">Publishing Artifacts</a></li>
+                <li class="toc-h1 toc-link "><a href="from_maven.html">Pants for Maven Experts</a></li>
+              </ul>
+            </li>
+            <li class="toc-h1 toc-heading"><a class="sidebar-nav-heading" data-toggle="collapse"
+                href="#python-menu" aria-expanded="false"
+                aria-controls="python-menu">
+                Python <span class="caret"></span></a>
+              <ul class="collapse sidebar-nav sidebar-submenu" id="python-menu">
+               <li class="toc-h1 toc-link "><a href="python_readme.html">Python Projects with Pants</a></li>
+               <li class="toc-h1 toc-link "><a href="3rdparty_py.html">Python 3rdparty Pattern</a></li>
+              </ul>
+            </li>
+            <li class="toc-h1 toc-heading"><a class="sidebar-nav-heading" data-toggle="collapse"
+                href="#go-menu" aria-expanded="false"
+                aria-controls="go-menu">
+                Go <span class="caret"></span></a>
+              <ul class="collapse sidebar-nav sidebar-submenu" id="go-menu">
+                <li class="toc-h1 toc-link "><a href="go_readme.html">Go support for Pants</a></li>
+              </ul>
+          </li>
+
         </div> <!-- site-toc -->
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-9">
         <div class="content">
-
           <div class="mainflow">
 
             <!-- main content start -->
             <!-- generated by pants! -->
 <style>
-.codehilite .hll { background-color: #ffffcc }
+.codehilite .hll { background-color: #FCC }
 .codehilite  { background: #f0f0f0; }
 .codehilite .c { color: #60a0b0; font-style: italic } /* Comment */
 .codehilite .err { border: 1px solid #FF0000 } /* Error */
@@ -231,7 +143,7 @@
 .codehilite .cp { color: #007020 } /* Comment.Preproc */
 .codehilite .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
 .codehilite .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
-.codehilite .gd { color: #A00000 } /* Generic.Deleted */
+.codehilite .gd { color: #9F0000 } /* Generic.Deleted */
 .codehilite .ge { font-style: italic } /* Generic.Emph */
 .codehilite .gr { color: #FF0000 } /* Generic.Error */
 .codehilite .gh { color: #000080; font-weight: bold } /* Generic.Heading */
@@ -281,16 +193,15 @@
 .codehilite .bp { color: #007020 } /* Name.Builtin.Pseudo */
 .codehilite .vc { color: #bb60d5 } /* Name.Variable.Class */
 .codehilite .vg { color: #bb60d5 } /* Name.Variable.Global */
-.codehilite .vi { color: #bb60d5 } /* Name.Variable.Instance */
-.codehilite .il { color: #40a070 } /* Literal.Number.Integer.Long */
+.codehilite .vi { color: #60D59A } /* Name.Variable.Instance */
+.codehilite .il { color: #419F70 } /* Literal.Number.Integer.Long */
 </style>
-<h1 id="pants-a-fast-scalable-build-system">Pants: A fast, scalable build system</h1>
-<p><br/></p>
+<h1 id="pants-a-fast-scalable-build-system">Pants: a fast, scalable build system</h1>
+
 <p><a href="reporting_server.html">
 <img alt="Pants Report Page" class="index-report-server-page-img" height="246px" src="images/report-server-page.png" width="391px"/>
 </a></p>
-<p><br/>
-Pants is a build system designed for codebases that:</p>
+<h2><br/> Pants is designed for codebases that:</h2>
 <ul>
 <li>Are large and/or growing rapidly.</li>
 <li>Consist of many subprojects that share a significant amount of code.</li>
@@ -298,11 +209,15 @@ Pants is a build system designed for codebases that:</p>
 <li>Use a variety of languages, code generators and frameworks.</li>
 </ul>
 <p><br/></p>
-<p>Pants supports Java, Scala, Python, C/C++, Go, Javascript/Node, Thrift, Protobuf and Android code.
-Adding support for other languages, frameworks and code generators is straightforward.</p>
+
+<h2>Pants supports:</h2>
+<p><li>Java, Scala, Python, C/C++, Go, Javascript/Node, Thrift, Protobuf and Android code.</li>
+<li>Adding support for other languages, frameworks and code generators is straightforward.</li>
+</p>
 <p class="index-intro-text"></p>
-<p>Pants is a collaborative open-source project, built and used by Twitter, Foursquare, Square,
-Medium and <a href="powered_by.html">other companies</a>.</p>
+<h2>Pants is used by:</h2>
+<p><li>Twitter</li> <li>Foursquare</li> <li>Square</li><li>Medium</li>
+  <li>And <a href="powered_by.html">other companies</a>.<li\></p>
 <h2 id="getting-started">Getting Started</h2>
 <ul>
 <li><a href="install.html">Installing Pants</a></li>
@@ -327,11 +242,9 @@ likely to carry out on a daily basis.</p>
 <li><a href="dev.html">Pants Developer Center</a></li>
 <li><a href="https://github.com/pantsbuild/pants/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
 </ul>
-
             <!-- main content end -->
-
-            <div class="generated">
-              Generated by <a href="docs.html">publish_docs</a>
+  <div class="generated">
+            Generated by <a href="docs.html">publish_docs</a>
               from dist/markdown/html/src/docs/index.html 2018-03-20T16:07:27.168580
             </div>
 
@@ -348,7 +261,12 @@ likely to carry out on a daily basis.</p>
   </div> <!-- container-fluid -->
 
 </div> <!-- page -->
-
+<footer class="row col-md-12" id="contact">
+  <ul>
+    <li>©Pants 2018 </li>
+  </ul>
+</footer>
+</section>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
 <script src="bootstrap-custom.min.js"></script>
 <script>

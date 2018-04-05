@@ -7,30 +7,50 @@
 body {
   background-color: #fff;
   color: #111;
-  font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #006;
   margin: 1em 0 0.3em -0.01em;
 }
+footer {
+  background-color: #f1f1f1;
+  margin-bottom: 0;
+}
 
+footer ul {
+    text-align: center;
+    padding: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-flex;
+  margin: 30px;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 25px !important;
+  font-family: 'IBM Plex Mono', monospace;
+}
 .navbar-brand-img {
   padding-top: 9px;
 }
 
 .mainflow {
-  margin-bottom: 40em; /* So jumping to anchor link works OK close to content bottom. */
+  margin-bottom: 5em; /* So jumping to anchor link works OK close to content bottom. */
   line-height: 24px;
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: #027bce;
+  color: #027BCF;
 }
 
 a:hover {
   background-color: #fff;
+  color: #180404;
+  text-decoration: none;
 }
 
 pre {
@@ -61,7 +81,9 @@ nav {
 }
 
 /* Site-wide table of contents */
-
+.site-toc {
+  margin-top: 30px;
+}
 .site-toc ul {
   padding: 0.3rem 0;
   margin: 0;
@@ -69,11 +91,11 @@ nav {
 }
 
 .site-toc li.toc-link a {
-  color: #027bce;
+  color: #CF0202;
 }
 
 .site-toc li.toc-here, .site-toc li.toc-link:hover, .site-toc li.toc-link:hover a {
-  background-color: #e5e7f3;
+  background-color: #E5EEF4;
   color: black;
 }
 
@@ -171,10 +193,6 @@ div.ci-status img {
   font-size: 70%;
   text-align: center;
   color: #777;
-}
-
-.generated a {
-  text-decoration: none;
 }
 
 .generated a:hover {
